@@ -7,19 +7,26 @@
         <title>SF/informed</title>
         <link rel="stylesheet" href="styles.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     </head>
     <body>
         <header>
             <a href=""><img src="https://i.imgur.com/9KPZcPS.png" alt="SF/informed" /></a>
+            <!-- <img src="https://i.imgur.com/68fGxqP.jpg" alt="SF Cable Cars" /> -->
         </header>
+        <div class="topnav">
+            <input type="text" placeholder="Search site...">
+             <button id="search" type="submit"><i class="fa fa-search"></i></button>
+        </div>
         <div class="navbar">
             <nav>
-                <a href="" onclick="route()">Home</a>
-                <a href="./pages/news.html" onclick="route()">News</a>
+                <a href="pages/home.html" onclick="route()">Home</a>
+                <a href="pages/news.html" onclick="route()">News</a>
+                 <a href="pages/about.html class="split" onclick="route()">About</a>
                 <div class="dropdown">
                     <button class="dropbtn">
                         Inform Me About...
-                        <i class="fa fa-caret-down" />
+                        <!-- <i class="fa fa-caret-down" /> -->
                     </button>
                     <div class="dropdown-content">
                         <a href="pages/where-live.html" onclick="route()">Where I Live...</a>

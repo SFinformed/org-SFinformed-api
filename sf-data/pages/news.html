@@ -10,64 +10,48 @@
       href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css"
       rel="stylesheet"
     />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     </head>
     <body>
         <header>
-            <a href="../index.html" onclick="route()"><img src="https://i.imgur.com/9KPZcPS.png" alt="SF/informed" /></a>
+            <a href="home.html" onclick="route()"><img src="https://i.imgur.com/9KPZcPS.png" alt="SF/informed" /></a>
         </header>
+         <div class="topnav">
+            <input type="text" placeholder="Search site...">
+             <button id="search" type="submit"><i class="fa fa-search"></i></button>
+        </div>
         <div class="navbar">
             <nav>
-                <a href="../index.html" onclick="route()">Home</a>
-                <a href="/pages/news.html" onclick="route()">News</a>
+                <a href="home.html" onclick="route()">Home</a>
+                <a href="" onclick="route()">News</a>
+                   <a href="about.html" class="split" onclick="route()">About</a>
                 <div class="dropdown">
                     <button class="dropbtn">
                         Inform Me About...
                         <i class="fa fa-caret-down" />
                     </button>
-                    <div class="dropdown-content">
-                        <a href="/where-live" onclick="route()">Where I Live...</a>
-                        <a href="/econ" onclick="route()">Economy & Community</a>
-                        <a href="/city-mgmt" onclick="route()">City Management& Ethics</a>
-                        <a href="transport" onclick="route()">Transportation</a>
-                        <a href="pub-safe.html" onclick="route()">Public Safety</a>
-                        <a href="#">Health & Social Services</a>
-                        <a href="#">Geographic Locations & Boundaries</a>
-                        <a href="#">Energy & Environment</a>
-                        <a href="#">Housing & Buildings</a>
-                        <a href="#">City Infrastructure</a>
-                        <a href="#">Culture & Recreation</a>
+                     <div class="dropdown-content">
+                        <a href="pages/where-live.html" onclick="route()">Where I Live...</a>
+                        <a href="pages/city-infra.html" onclick="route()">City Infrastructure</a>
+                        <a href="pages/city-mgmt.html" onclick="route()">City Management& Ethics</a>
+                        <a href="pages/cul-rec.html" onclick="route()">Culture & Recreation</a>
+                        <a href="pages/econ.html" onclick="route()">Economy & Community</a>
+                        <a href="pages/geog.html" onclick="route()">Geographic Locations & Boundaries</a>
+                        <a href="pages/hss.html" onclick="route()">Health & Social Services</a>
+                        <a href="pages/hsg.html" onclick="route()">Housing & Buildings</a>
+                        <a href="pages/nrg.html" onclick="route()">Energy & Environment</a>
+                        <a href="pages/pub-safe.html" onclick="route()">Public Safety</a>
+                        <a href="pages/transport.html" onclick="route()">Transportation</a>
                     </div>
                 </div>
             </nav>
         </div>
         <script src="js/router.js"></script>
 <div class="page-container align-center">
-  <h1>Lorem Ipsum</h1>
+  <h1>Local News</h1>
   <p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ullam, dolore
-    magnam sed perspiciatis sequi quidem voluptatum praesentium eius nesciunt
-    illo quasi consectetur asperiores esse nisi quisquam fugiat exercitationem
-    hic. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
-    mollitia, animi assumenda ducimus hic dolorem itaque quas eos dolores quo
-    illum qui maiores fuga explicabo officia, praesentium harum expedita
-    ratione?
+    Stay informed about San Francisco and local current events with this SFGate rss feed.
   </p>
-  <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime libero
-    consectetur architecto, similique assumenda voluptatibus iusto corrupti,
-    aliquam labore, inventore exercitationem mollitia. Veniam laudantium
-    dignissimos similique, culpa provident praesentium ab. Lorem ipsum dolor sit
-    amet consectetur adipisicing elit. Omnis cupiditate impedit accusamus
-    dignissimos voluptatem repellendus nihil provident corrupti nisi id alias
-    harum aliquam, ut eos? Animi recusandae culpa doloribus error.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, amet
-    recusandae velit, ut vel dignissimos architecto aperiam, fuga alias
-    cupiditate voluptatem iste! Quaerat nostrum, aut minima doloribus distinctio
-    aspernatur ex. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Iste, earum obcaecati eius commodi quasi fugiat nostrum quia quos doloremque
-    quibusdam suscipit accusamus molestias temporibus ex facilis eos pariatur
-    vel enim!
-  </p>
+
 </div>
+<rssapp-wall id="Ylr79sJFS0UurUbx"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
