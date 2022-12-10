@@ -28,14 +28,14 @@
   </div>
 </form>
 <!-- End siteLevel HTML Searchbox Code -->
-                 <a href="" class="split" id="aboutsf" onclick="route()">About SF/informed</a>
+                 <a href="about.html" class="split" id="aboutsf" onclick="route()">About SF/informed</a>
                 <div class="dropdown">
                     <button class="dropbtn">
                         Inform Me About...
                         <!-- <i class="fa fa-caret-down" /> -->
                     </button>
                     <div class="dropdown-content">
-                        <a href="where-live.html" onclick="route()">Where I Live...</a>
+                        <a href="" onclick="route()">Where I Live...</a>
                         <a href="city-infra.html" onclick="route()">City Infrastructure</a>
                         <a href="city-mgmt.html" onclick="route()">City Management& Ethics</a>
                         <a href="cul-rec.html" onclick="route()">Culture & Recreation</a>
@@ -49,11 +49,36 @@
                     </div>
                 </div>
             </nav>
+            <div id="main-page"></div>
         </div>
         <script src="js/router.js"></script>
+        <container>
  <div class="wrapper">
-            <h1>ABOUT SF/Informed</h1>
-            <h2>FILLER  FILLER  FILLER  >FILLER  FILLER  FILLER  >FILLER  FILLER  FILLER  >FILLER  FILLER  FILLER  >FILLER  FILLER  FILLER  >FILLER  FILLER  FILLER  >FILLER  FILLER  FILLER  >FILLER  FILLER  FILLER  </h2>
-            </div>  
+    <h1>WHERE I LIVE...</h1>
+            <h1>WHAT HAS BEEN HAPPENING IN SF?</h1>
+            <container>
+            <form class="form">
+                <label for="number-of-complaints">Number of Incidents to View: </label>
+                <input
+                    id="number-of-complaints"
+                    name="number-of-complaints"
+                    type="number"
+                    class="number-of-complaints"
+                    placeholder="# OF INCIDENTS"
+                />
+                </container>
+                <br/>
+                <h3>Incident Category</h3>
+                <br/>
+                <button>Lost Property</button>
+                <button>Burglary</button>
+                <button>Missing Person</button>
+                <button>Larceny Theft</button>
+                <button>Drug Offense</button>
+            </form>
+            <ul class="complaints-list"></ul>
+        </div>
+        </container>
+        <script src="../scripts/where-live.script.js"></script>
     </body>
 </html>

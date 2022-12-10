@@ -22,10 +22,20 @@ h3 {
 }
 
 div.dropdown button.dropbtn {
+  margin-top: 5px;
     color: orange;
     font-style: italic;
 }
 
+#arrowdown i.fa fa-caret-down{
+  margin-top: 5px;
+    color: white;
+    font-style: italic;
+}
+
+.fa fa-caret-down::before {
+  content: "";
+} 
 .wrapper {
     margin-left: auto;
     margin-right: auto;
@@ -113,6 +123,7 @@ li::before {
 
 /* Links inside the navbar */
 .navbar a {
+  margin-top: 5px;
   float: left;
   font-size: 16px;
   color: white;
@@ -145,9 +156,21 @@ li::before {
 }
 
 /* Create a right-aligned (split) link inside the navigation bar */
-.navbar a.split {
+ a.split#aboutsf {
+  margin-top: 5px;
   float: right;
-  background-color: rgb(179, 127, 42);
+  background-color: rgb(200, 153, 24);
+  color: white;
+}
+.split {
+  float: right;
+  background-color: black;
+  color: white;
+}
+
+.split#search {
+  float: right;
+  background-color: black;
   color: white;
 }
 
@@ -186,6 +209,8 @@ li::before {
   top: 0;
   right: 2px;
   overflow: hidden;
+  margin-top: 3px;
+  margin-right: 6px;
   width: 15%;
   background-color: white;
   font-family: 'Times New Roman', Times, serif;
@@ -206,23 +231,24 @@ li::before {
     .topnav a, .topnav input[type=text] {
         background-color: gray;
         float: none;
-        display: block;
+        /* display: block; */
         text-align: left;
         width: 100%;
         margin: 0;
-        /* padding: 4px; */
+        padding: 4px;
     }
-    .topnav input[type=text] {
+    /* .topnav input[type=text] {
         border: 1px solid rgb(188, 180, 180);
         border-radius: 20%;
-    }
+    } */
 }
 
 button#search {
-    position: absolute;
-    height: 2rem;
-top: 3px;
-right: 2px;
+position: sticky;
+top; 0px;
+right: 5px;
+height: 2rem;
+width: 3rem;
 bottom: 5px;
 padding: 3px;;
 }

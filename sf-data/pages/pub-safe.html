@@ -6,41 +6,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SF/informed</title>
         <link rel="stylesheet" href="../styles.css" />
-        <link
-      href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css"
-      rel="stylesheet"
-    />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     </head>
     <body>
         <header>
-            <a href=#home><img src="https://i.imgur.com/9KPZcPS.png" alt="SF/informed" /></a>
+            <a href="home.html"><img src="https://i.imgur.com/9KPZcPS.png" alt="SF/informed" /></a>
+            <!-- <img src="https://i.imgur.com/68fGxqP.jpg" alt="SF Cable Cars" /> -->
         </header>
-         <div class="topnav">
-            <input type="text" placeholder="Search site...">
-             <button id="search" type="submit"><i class="fa fa-search"></i></button>
-        </div>
+       
         <div class="navbar">
             <nav>
                 <a href="home.html" onclick="route()">Home</a>
                 <a href="news.html" onclick="route()">News</a>
-                <a href="about.html" class="split" onclick="route()">About</a>
+                <!-- Begin siteLevel HTML Searchbox Code -->
+<form class="split" method="get" action="https://www.sitelevel.com/query" accept-charset="utf-8">
+  <div class="sl_search_box">
+    <input type="hidden" name="crid" value="ls3s1sja"/>
+    <input type="text" name="query"/>
+    <button id="search" type="submit"><i class="fa fa-search"></i></button>
+  </div>
+</form>
+<!-- End siteLevel HTML Searchbox Code -->
+                 <a href="about.html" class="split" id="aboutsf" onclick="route()">About SF/informed</a>
                 <div class="dropdown">
                     <button class="dropbtn">
                         Inform Me About...
-                        <i class="fa fa-caret-down" />
+                        <!-- <i class="fa fa-caret-down" /> -->
                     </button>
                     <div class="dropdown-content">
-            <a href="pages/where-live.html" onclick="route()">Where I Live...</a>
-                        <a href="pages/city-infra.html" onclick="route()">City Infrastructure</a>
-                        <a href="pages/city-mgmt.html" onclick="route()">City Management& Ethics</a>
-                        <a href="pages/cul-rec.html" onclick="route()">Culture & Recreation</a>
-                        <a href="pages/econ.html" onclick="route()">Economy & Community</a>
-                        <a href="pages/geog.html" onclick="route()">Geographic Locations & Boundaries</a>
-                        <a href="pages/hss.html" onclick="route()">Health & Social Services</a>
-                        <a href="pages/hsg.html" onclick="route()">Housing & Buildings</a>
-                        <a href="pages/nrg.html" onclick="route()">Energy & Environment</a>
+                        <a href="where-live.html" onclick="route()">Where I Live...</a>
+                        <a href="city-infra.html" onclick="route()">City Infrastructure</a>
+                        <a href="city-mgmt.html" onclick="route()">City Management& Ethics</a>
+                        <a href="cul-rec.html" onclick="route()">Culture & Recreation</a>
+                        <a href="econ.html" onclick="route()">Economy & Community</a>
+                        <a href="nrg.html" onclick="route()">Energy & Environment</a>
+                        <a href="geog.html" onclick="route()">Geographic Locations & Boundaries</a>
+                        <a href="hss.html" onclick="route()">Health & Social Services</a>
+                        <a href="hsg.html" onclick="route()">Housing & Buildings</a>
                         <a href="" onclick="route()">Public Safety</a>
-                        <a href="pages/transport.html" onclick="route()">Transportation</a>
+                        <a href="transport.html" onclick="route()">Transportation</a>
                     </div>
                 </div>
             </nav>
@@ -49,6 +54,7 @@
         <script src="js/router.js"></script>
         <container>
  <div class="wrapper">
+    <h1>PUBLIC SAFETY</h1>
             <h1>WHAT HAS BEEN HAPPENING IN SF?</h1>
             <container>
             <form class="form">
@@ -73,7 +79,6 @@
             <ul class="complaints-list"></ul>
         </div>
         </container>
-        <script src="../script.js"></script>
-       
+        <script src="../scripts/pub-safe.script.js"></script>
     </body>
 </html>
