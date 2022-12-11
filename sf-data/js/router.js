@@ -1,7 +1,7 @@
 const route = event => {
 	event = event || window.event;
 	event.preventDefault();
-	window.history.pushState({}, '', event.target.href);
+	window.history.replaceState({}, '', event.target.href);
 	handleLocation();
 };
 
@@ -9,7 +9,7 @@ const routes = {
 	404: '/pages/404.html',
 	'/': '/pages/index.html',
 	'/about': '/pages/about.html',
-	'/news': '/pages/news.html'
+	'/news': '/news.html'
 };
 
 const handleLocation = async () => {
