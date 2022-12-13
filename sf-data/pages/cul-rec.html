@@ -53,32 +53,33 @@
             </nav>
             <div id="main-page"></div>
         </div>
-        <script src="js/router.js"></script>
+        <!-- <script src="./js/router.js"></script> -->
         <container>
  <div class="wrapper">
     <h1>CULTURE & RECREATION</h1>
-            <h1>WHAT HAS BEEN HAPPENING IN SF?</h1>
+            <h1>Would you like to know what City-funded public art is in your area?</h1>
             <container>
             <form class="form">
-                <label for="number-of-complaints">Number of Incidents to View: </label>
+                <label for="zipcode-search">Number of Art Pieces to View: </label>
                 <input
-                    id="number-of-complaints"
-                    name="number-of-complaints"
+                    id="zipcode-search"
+                    name="zipcode-search"
                     type="number"
-                    class="number-of-complaints"
-                    placeholder="# OF INCIDENTS"
+                    class="zipcode-search"
+                    placeholder="number"
                 />
-                </container>
-                <br/>
-                <h3>Incident Category</h3>
-                <br/>
-                <button>Lost Property</button>
-                <button>Burglary</button>
-                <button>Missing Person</button>
-                <button>Larceny Theft</button>
-                <button>Drug Offense</button>
+                 <label for="zipcode">zip: </label>
+                <input
+                    id="zipcode"
+                    name="zipcode"
+                    type="number"
+                    class="zipcode"
+                    placeholder="zip"
+                />
+                <button type="submit" >Submit</button>
             </form>
-            <ul class="complaints-list"></ul>
+        </container> 
+            <ul class="arts-list"></ul>
         </div>
         </container>
         <script src="../scripts/cul-rec.script.js"></script>
