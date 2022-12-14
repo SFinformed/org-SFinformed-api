@@ -1,0 +1,29 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: white;
+}
+
+label {
+  padding: 5px;
+}
+input {
+  display: inline-block;
+}
+
+.proxy#myData {
+  list-style: none;
+  padding: 4px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  font-weight: bold;
+  max-width: 100%;
+  min-width: 500px;
+  height: 100%;
+}
+
+.proxy {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-size: 5rem;
+  color: black
+}

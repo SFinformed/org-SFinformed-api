@@ -9,22 +9,20 @@ console.log(artsList);
 
 // FUNCTIONS
 const updateResults = data => {
-	// empty the list of any preexisting data first
-	artsList.innerHTML = '';
-    console.log(data);
-
-	for (let i = 0; i < data.length; i++) {
-		const artHTML = `<li>${i + 1}. ${data[i].artist} - ${data[i]
-			.display_title}</li>`;
-		artsList.innerHTML += artHTML;
-	}
+    var  mainContainer = document.getElementById("myData");
+    mainContainer.innerHTML = '';
+    for (let i = 0; i < data.length; i++) {
+        var li = document.createElement('li');
+        li.innerHTML = `${i+1}.   Artist: ` + data[i].artist + `   ***   Title: ` + data[i].display_title + `   ***   Current Status: ` + data[i].current_location + `   ***   Location: ` + data[i].street_address_or_intersection;
+        mainContainer.appendChild(li);
+    }
 };
 
 const handleSubmit = async event => {
 	event.preventDefault();
-	const zipcode = document.getElementById('#zipcode').value;
+	const zipcode = document.querySelector('#zipcode').value;
 	// get the number of results
-	const userInput = document.getElementById('#zipcode-search').value;
+	const userInput = document.querySelector('#zipcode-search').value;
 	const REQUEST_URL = BASE_URL + zipcode + `&$limit=${userInput || 10}`;
 	// make the api call with the request url
 	try {
@@ -32,19 +30,9 @@ const handleSubmit = async event => {
 		const data = await response.json();
 		updateResults(data);
 	} catch (err) {
-		console.error(err);
+        console.error(err);
 	}
 };
 
-// const handleToggle = event => {
-// 	event.preventDefault();
-// 	if (event.target.tagName === 'BUTTON') {
-// 		// use nextElementSibling to grab the sibling HTML element
-// 		// use class list toggle to hide/show the element
-// 		event.target.nextElementSibling.classList.toggle('hide-response');
-// 	}
-// };
-
 // EVENT LISTENERS
-// form.addEventListener('click', handleSubmit);
-// arts-List.addEventListener('click', handleToggle);
+ form.addEventListener('click', handleSubmit);

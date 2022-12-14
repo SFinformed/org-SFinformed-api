@@ -12,11 +12,11 @@ const complaintsList = document.querySelector('.complaints-list');
 const updateResults = data => {
 	// empty the complaints list of any preexisting data first
 	complaintsList.innerHTML = '';
+	// console.log(data);
 
 	for (let i = 0; i < data.length; i++) {
 		// console.log(data[i].unique_key);
-		const complaintHTML = `<li>${i + 1}. ${data[i]
-			.incident_subcategory} - ${data[i].incident_date}
+		const complaintHTML = `<li>${i + 1}. ${data[i].incident_subcategory} - ${data[i].incident_date}
         <button class="complaints-list-item-button">WHAT DID THE POLICE DO?</button>
         <p class="hide-response">${data[i].resolution}</p>
         </li>`;

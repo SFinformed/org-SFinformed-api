@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SF/informed</title>
         <link rel="stylesheet" href="../styles.css" />
+         <link rel="stylesheet" href="cul-rec.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     </head>
@@ -53,10 +54,10 @@
             </nav>
             <div id="main-page"></div>
         </div>
-        <!-- <script src="./js/router.js"></script> -->
+        <script src="./js/router.js"></script>
         <container>
  <div class="wrapper">
-    <h1>CULTURE & RECREATION</h1>
+    <h1 style="color: rgb(171, 6, 171)")">CULTURE & RECREATION</h1>
             <h1>Would you like to know what City-funded public art is in your area?</h1>
             <container>
             <form class="form">
@@ -68,20 +69,23 @@
                     class="zipcode-search"
                     placeholder="number"
                 />
-                 <label for="zipcode">zip: </label>
+                 <label for="zipcode">zipcode: </label>
                 <input
                     id="zipcode"
                     name="zipcode"
                     type="number"
                     class="zipcode"
-                    placeholder="zip"
+                    placeholder="enter zipcode"
                 />
-                <button type="submit" >Submit</button>
+                </container>
+                <button type="submit"
+                >Submit</button>
             </form>
-        </container> 
-            <ul class="arts-list"></ul>
+            <ul class="arts-list">
+            </ul>
+            <div class="proxy" id="myData">    </div>
+            <script src="../scripts/cul-rec.script.js"></script>
         </div>
         </container>
-        <script src="../scripts/cul-rec.script.js"></script>
     </body>
 </html>
