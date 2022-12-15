@@ -10,6 +10,11 @@ input {
   display: inline-block;
 }
 
+.factoidQ {
+    font-style: italic;
+    
+}
+
 .proxy#myData {
   list-style: none;
   padding: 4px;
