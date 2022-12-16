@@ -3,6 +3,15 @@ body {
   background-color: white;
 }
 
+.factoidQ {
+  margin-left: 25px;
+  margin-bottom: 25px;
+  text-align: left;    
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
 label {
   padding: 5px;
 }
@@ -10,10 +19,6 @@ input {
   display: inline-block;
 }
 
-.factoidQ {
-    font-style: italic;
-    
-}
 
 .proxy#myData {
   list-style: none;

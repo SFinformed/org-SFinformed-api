@@ -5,21 +5,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SF/informed</title>
-        <link rel="stylesheet" href="../styles.css" />
-        <link
-      href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css"
-      rel="stylesheet"
-    />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="sf-data/styles.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     </head>
     <body>
         <header>
-            <a href="home.html" onclick="route()"><img src="https://i.imgur.com/9KPZcPS.png" alt="SF/informed" /></a>
+            <a href="index.html"><img src="https://i.imgur.com/9KPZcPS.png" alt="SF/informed" /></a>
+            <!-- <img src="https://i.imgur.com/68fGxqP.jpg" alt="SF Cable Cars" /> -->
         </header>
+       
         <div class="navbar">
-              <nav>
-                <a href="home.html" onclick="route()">Home</a>
-                <a href="" onclick="route()">News</a>
+            <nav>
+                <a href="index.html" onclick="route()">Home</a>
+                <a href="news.html" onclick="route()">News</a>
                 <!-- Begin siteLevel HTML Searchbox Code -->
 <form class="split" method="get" action="https://www.sitelevel.com/query" accept-charset="utf-8">
   <div class="sl_search_box">
@@ -40,7 +39,8 @@
                         <a href="city-infra.html" onclick="route()">City Infrastructure</a>
                         <a href="city-mgmt.html" onclick="route()">City Management & Ethics</a>
                         <a href="cul-rec.html" onclick="route()">Culture & Recreation</a>
-                        <a href="econ.html" onclick="route()">Economy & Community</a>
+                        <a href="" onclick="route()">Economy & Community</a>
+                        <a href="edu.html" onclick="route()">Education & Learning</a>
                         <a href="nrg.html" onclick="route()">Energy & Environment</a>
                         <a href="geog.html" onclick="route()">Geographic Locations & Boundaries</a>
                         <a href="hss.html" onclick="route()">Health & Social Services</a>
@@ -51,13 +51,36 @@
                     </div>
                 </div>
             </nav>
+            <div id="main-page"></div>
         </div>
         <script src="js/router.js"></script>
-<div class="page-container align-center">
-  <h1>Local News</h1>
-  <p>
-    Stay informed about San Francisco and local current events with this SFGate RSS feed.
-  </p>
-
-</div>
-<rssapp-wall id="Ylr79sJFS0UurUbx"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
+        <container>
+ <div class="wrapper">
+    <h1>ECONOMY & COMMUNITY</h1>
+            <h1>WHAT HAS BEEN HAPPENING IN SF?</h1>
+            <container>
+            <form class="form">
+                <label for="number-of-complaints">Number of Incidents to View: </label>
+                <input
+                    id="number-of-complaints"
+                    name="number-of-complaints"
+                    type="number"
+                    class="number-of-complaints"
+                    placeholder="# OF INCIDENTS"
+                />
+                </container>
+                <br/>
+                <h3>Incident Category</h3>
+                <br/>
+                <button>Lost Property</button>
+                <button>Burglary</button>
+                <button>Missing Person</button>
+                <button>Larceny Theft</button>
+                <button>Drug Offense</button>
+            </form>
+            <ul class="complaints-list"></ul>
+        </div>
+        </container>
+        <script src="sf-data/scripts/econ.script.js"></script>
+    </body>
+</html>
