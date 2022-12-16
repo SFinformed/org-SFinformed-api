@@ -1,0 +1,26 @@
+body {
+    margin: 20px;
+}
+
+table {
+    width: 110%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+td {
+    text-align: center;
+    min-height: 100px;
+}
+
+td.one {
+    width: 20%;
+}
+td.PIMPic {
+    width: 50%;
+    height: 500px;
+    background-image: url(https://i.imgur.com/pJI8bvS.png);
+    background-size: cover;
+}

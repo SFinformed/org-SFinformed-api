@@ -5,19 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SF/informed</title>
-        <link rel="stylesheet" href="../styles.css" />
+        <link rel="stylesheet" href="sf-data/styles.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     </head>
     <body>
         <header>
-            <a href=""><img src="https://i.imgur.com/9KPZcPS.png" alt="SF/informed" /></a>
+            <a href="index.html"><img src="https://i.imgur.com/9KPZcPS.png" alt="SF/informed" /></a>
             <!-- <img src="https://i.imgur.com/68fGxqP.jpg" alt="SF Cable Cars" /> -->
         </header>
        
         <div class="navbar">
             <nav>
-                <a href="" onclick="route()">Home</a>
+                <a href="index.html" onclick="route()">Home</a>
                 <a href="news.html" onclick="route()">News</a>
                 <!-- Begin siteLevel HTML Searchbox Code -->
 <form class="split" method="get" action="https://www.sitelevel.com/query" accept-charset="utf-8">
@@ -46,15 +46,40 @@
                        <a href="hsg.html" onclick="route()">Neighborhoods, Real Estate and Development</a>
                         <a href="politics.html" onclick="route()">Politics & Elections</a>
                         <a href="pub-safe.html" onclick="route()">Public Safety</a>
-                        <a href="transport.html" onclick="route()">Transportation</a>
+                        <a href="" onclick="route()">Transportation</a>
                     </div>
                 </div>
             </nav>
+            <div id="main-page"></div>
         </div>
         <script src="js/router.js"></script>
+        <container>
  <div class="wrapper">
-            <h1>WELCOME TO SF/INFORMED</h1>
-            <h2>This app provides useful and relevant data to those who live, work and play in San Francisco. By informing the community we hope to improve the quality of life of everyone as well as encourage and increase civic participation.</h2>
-            </div>  
+    <h1>TRANSPORTATION</h1>
+            <h1>WHAT HAS BEEN HAPPENING IN SF?</h1>
+            <container>
+            <form class="form">
+                <label for="number-of-complaints">Number of Incidents to View: </label>
+                <input
+                    id="number-of-complaints"
+                    name="number-of-complaints"
+                    type="number"
+                    class="number-of-complaints"
+                    placeholder="# OF INCIDENTS"
+                />
+                </container>
+                <br/>
+                <h3>Incident Category</h3>
+                <br/>
+                <button>Lost Property</button>
+                <button>Burglary</button>
+                <button>Missing Person</button>
+                <button>Larceny Theft</button>
+                <button>Drug Offense</button>
+            </form>
+            <ul class="complaints-list"></ul>
+        </div>
+        </container>
+        <script src="sf-data/scripts/transport.script.js"></script>
     </body>
 </html>

@@ -3,9 +3,9 @@ const BASE_URL = 'https://data.sfgov.org/resource/r7bn-7v9c.json?zip_code=';
 
 // CACHED DOM ELEMENTS
 const form = document.querySelector('.form');
-const artsList = document.getElementsByClassName('arts-list');
-// Verify DOM elements are correctly selected
-console.log(artsList);
+// const artsList = document.getElementsByClassName('arts-list');
+// // Verify DOM elements are correctly selected
+// console.log(artsList);
 
 // FUNCTIONS
 const updateResults = data => {

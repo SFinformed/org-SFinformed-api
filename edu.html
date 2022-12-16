@@ -5,19 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SF/informed</title>
-        <link rel="stylesheet" href="../styles.css" />
+        <link rel="stylesheet" href="sf-data/styles.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     </head>
     <body>
         <header>
-            <a href="home.html"><img src="https://i.imgur.com/9KPZcPS.png" alt="SF/informed" /></a>
+            <a href="index.html"><img src="https://i.imgur.com/9KPZcPS.png" alt="SF/informed" /></a>
             <!-- <img src="https://i.imgur.com/68fGxqP.jpg" alt="SF Cable Cars" /> -->
         </header>
        
         <div class="navbar">
             <nav>
-                <a href="home.html" onclick="route()">Home</a>
+                <a href="index.html" onclick="route()">Home</a>
                 <a href="news.html" onclick="route()">News</a>
                 <!-- Begin siteLevel HTML Searchbox Code -->
 <form class="split" method="get" action="https://www.sitelevel.com/query" accept-charset="utf-8">
@@ -28,7 +28,7 @@
   </div>
 </form>
 <!-- End siteLevel HTML Searchbox Code -->
-                 <a href="" class="split" id="aboutsf" onclick="route()">About SF/informed</a>
+                 <a href="about.html" class="split" id="aboutsf" onclick="route()">About SF/informed</a>
                 <div class="dropdown">
                     <button class="dropbtn">
                         Inform Me About...
@@ -40,6 +40,7 @@
                         <a href="city-mgmt.html" onclick="route()">City Management & Ethics</a>
                         <a href="cul-rec.html" onclick="route()">Culture & Recreation</a>
                         <a href="econ.html" onclick="route()">Economy & Community</a>
+                        <a href="" onclick="route()">Education & Learning</a>
                         <a href="nrg.html" onclick="route()">Energy & Environment</a>
                         <a href="geog.html" onclick="route()">Geographic Locations & Boundaries</a>
                         <a href="hss.html" onclick="route()">Health & Social Services</a>
@@ -50,11 +51,36 @@
                     </div>
                 </div>
             </nav>
+            <div id="main-page"></div>
         </div>
         <script src="js/router.js"></script>
+        <container>
  <div class="wrapper">
-            <h1>ABOUT SF/Informed</h1>
-            <h2>FILLER  FILLER  FILLER  >FILLER  FILLER  FILLER  >FILLER  FILLER  FILLER  >FILLER  FILLER  FILLER  >FILLER  FILLER  FILLER  >FILLER  FILLER  FILLER  >FILLER  FILLER  FILLER  >FILLER  FILLER  FILLER  </h2>
-            </div>  
+    <h1>EDUCATION & LEARNING</h1>
+            <h1>WHAT HAS BEEN HAPPENING IN SF?</h1>
+            <container>
+            <form class="form">
+                <label for="number-of-complaints">Number of Incidents to View: </label>
+                <input
+                    id="number-of-complaints"
+                    name="number-of-complaints"
+                    type="number"
+                    class="number-of-complaints"
+                    placeholder="# OF INCIDENTS"
+                />
+                </container>
+                <br/>
+                <h3>Incident Category</h3>
+                <br/>
+                <button>Lost Property</button>
+                <button>Burglary</button>
+                <button>Missing Person</button>
+                <button>Larceny Theft</button>
+                <button>Drug Offense</button>
+            </form>
+            <ul class="complaints-list"></ul>
+        </div>
+        </container>
+        <script src="sf-data/scripts/edu.script.js"></script>
     </body>
 </html>

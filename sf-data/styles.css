@@ -17,6 +17,10 @@ h1 {
     text-align: center;
 }
 
+h1.factoidQ {
+    font-style: italic;
+}
+
 h3 {
     text-align: center;
 }
