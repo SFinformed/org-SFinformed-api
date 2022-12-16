@@ -20,16 +20,6 @@
             <nav>
                 <a href="index.html" onclick="route()">Home</a>
                 <a href="news.html" onclick="route()">News</a>
-                <!-- Begin siteLevel HTML Searchbox Code -->
-<form class="split" method="get" action="https://www.sitelevel.com/query" accept-charset="utf-8">
-  <div class="sl_search_box">
-    <input type="hidden" name="crid" value="ls3s1sja"/>
-    <input type="text" name="query"/>
-    <button id="search" type="submit"><i class="fa fa-search"></i></button>
-  </div>
-</form>
-<!-- End siteLevel HTML Searchbox Code -->
-                 <a href="about.html" class="split" id="aboutsf" onclick="route()">About SF/informed</a>
                 <div class="dropdown">
                     <button class="dropbtn">
                         Inform Me About...
@@ -51,6 +41,16 @@
                         <a href="transport.html" onclick="route()">Transportation</a>
                     </div>
                 </div>
+                <!-- Begin siteLevel HTML Searchbox Code -->
+<form class="split" method="get" action="https://www.sitelevel.com/query" accept-charset="utf-8">
+  <div class="sl_search_box">
+    <input type="hidden" name="crid" value="ls3s1sja"/>
+    <input type="text" name="query"/>
+    <button id="search" type="submit"><i class="fa fa-search"></i></button>
+  </div>
+</form>
+<!-- End siteLevel HTML Searchbox Code -->
+                 <a href="about.html" class="split" id="aboutsf" onclick="route()">About SF/informed</a>
             </nav>
             <div id="main-page"></div>
         </div>
@@ -58,6 +58,60 @@
         <!-- <container> -->
  <div class="wrapper">
     <h1 style="color: rgb(171, 6, 171)")">CULTURE & RECREATION</h1>
+    <table>
+  <tr>
+    <th>Resource</th>
+    <th>Additional Information</th>
+    <th>TBD</th>
+  </tr>
+  <tr>
+    <td class="one"><a href="https://sfplanning.org"  target="_blank" rel="noopener noreferrer">San Francisco Recreation and Parks Department</a></td>
+    <td><a href="mailto:phil.ginsburg@sfrecpark.org">Send Email to Phil Ginsburg, RPD General Manager</a></td>
+    <td>TBD</td>
+  </tr>
+  <tr>
+    <td> <p><a href="https://sfsymphony.org" target="_blank" rel="noopener noreferrer">San Francisco Symphony</a></p> </td>
+    <td class="PIMPic"></td>
+    <td>TBD</td>
+  </tr>
+   <tr>
+    <td><p> <a href="https://sfballet.org" target="_blank" rel="noopener noreferrer">San Francisco Ballet</a></p></td>
+    <td class="ballet"></td>
+    <td>TBD</td>
+  </tr>
+     <tr>
+    <td><p> <a href="" target="_blank" rel="noopener noreferrer">Public Art in Your Neighborhood</a></p></td>
+    <td><div class="factoidQ">Would you like to know what City-funded public art is in your area?</div>
+            <container>
+            <form class="form">
+                <label for="zipcode-search">Number of Art Pieces to View: </label>
+                <input
+                    id="zipcode-search"
+                    name="zipcode-search"
+                    type="number"
+                    class="zipcode-search"
+                    placeholder="number"
+                />
+                 <label for="zipcode">zipcode: </label>
+                <input
+                    id="zipcode"
+                    name="zipcode"
+                    type="number"
+                    class="zipcode"
+                    placeholder="enter zipcode"
+                />
+                </container>
+                <button type="submit"
+                >Submit</button>
+            </form>
+            <ul class="arts-list">
+            </ul>
+            <div class="proxy" id="myData">    </div>
+            <script src="sf-data/scripts/cul-rec.script.js"></script>
+        </div></td>
+    <td>TBD</td>
+  </tr>
+</table>
             <div class="factoidQ">Would you like to know what City-funded public art is in your area?</div>
             <container>
             <form class="form">

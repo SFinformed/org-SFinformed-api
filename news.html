@@ -1,110 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SF/informed</title>
-        <link rel="stylesheet" href="sf-data/styles.css" />
-        <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SF/informed</title>
+    <link rel="stylesheet" href="sf-data/styles.css" />
+    <link
       href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css"
       rel="stylesheet"
     />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    </head>
-    <body>
-        <header>
-            <a href="index.html" onclick="route()"><img src="https://i.imgur.com/9KPZcPS.png" alt="SF/informed" /></a>
-        </header>
-        <div class="navbar">
-              <nav>
-                <a href="index.html" onclick="route()">Home</a>
-                <a href="" onclick="route()">News</a>
-                <!-- Begin siteLevel HTML Searchbox Code -->
-<form class="split" method="get" action="https://www.sitelevel.com/query" accept-charset="utf-8">
-  <div class="sl_search_box">
-    <input type="hidden" name="crid" value="ls3s1sja"/>
-    <input type="text" name="query"/>
-    <button id="search" type="submit"><i class="fa fa-search"></i></button>
-  </div>
-</form>
-<!-- End siteLevel HTML Searchbox Code -->
-                 <a href="about.html" class="split" id="aboutsf" onclick="route()">About SF/informed</a>
-                <div class="dropdown">
-                    <button class="dropbtn">
-                        Inform Me About...
-                        <!-- <i class="fa fa-caret-down" /> -->
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="where-live.html" onclick="route()">Where I Live...</a>
-                        <a href="city-infra.html" onclick="route()">City Infrastructure</a>
-                        <a href="city-mgmt.html" onclick="route()">City Management & Ethics</a>
-                        <a href="cul-rec.html" onclick="route()">Culture & Recreation</a>
-                        <a href="econ.html" onclick="route()">Economy & Community</a>
-                        <a href="nrg.html" onclick="route()">Energy & Environment</a>
-                        <a href="geog.html" onclick="route()">Geographic Locations & Boundaries</a>
-                        <a href="hss.html" onclick="route()">Health & Social Services</a>
-                       <a href="hsg.html" onclick="route()">Neighborhoods, Real Estate and Development</a>
-                        <a href="politics.html" onclick="route()">Politics & Elections</a>
-                        <a href="pub-safe.html" onclick="route()">Public Safety</a>
-                        <a href="transport.html" onclick="route()">Transportation</a>
-                    </div>
-                </div>
-            </nav>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" onclick="route()">
+        <img src="https://i.imgur.com/9KPZcPS.png" alt="SF/informed" />
+      </a>
+    </header>
+    <div class="navbar">
+      <nav>
+        <a href="index.html" onclick="route()">Home</a>
+        <a href="" onclick="route()">News</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            Inform Me About...
+            <!-- <i class="fa fa-caret-down" /> -->
+          </button>
+          <div class="dropdown-content">
+            <a href="where-live.html" onclick="route()">Where I Live...</a>
+            <a href="city-infra.html" onclick="route()">City Infrastructure</a>
+            <a href="city-mgmt.html" onclick="route()">
+              City Management & Ethics
+            </a>
+            <a href="cul-rec.html" onclick="route()">Culture & Recreation</a>
+            <a href="econ.html" onclick="route()">Economy & Community</a>
+            <a href="nrg.html" onclick="route()">Energy & Environment</a>
+            <a href="geog.html" onclick="route()">
+              Geographic Locations & Boundaries
+            </a>
+            <a href="hss.html" onclick="route()">Health & Social Services</a>
+            <a href="hsg.html" onclick="route()">
+              Neighborhoods, Real Estate and Development
+            </a>
+            <a href="politics.html" onclick="route()">Politics & Elections</a>
+            <a href="pub-safe.html" onclick="route()">Public Safety</a>
+            <a href="transport.html" onclick="route()">Transportation</a>
+          </div>
         </div>
-        <script src="js/router.js"></script>
-<div class="page-container align-center">
-  <h1>Local News</h1>
-  <p>
-    Stay informed about San Francisco and local current events with this SFGate RSS feed.
-  </p>
+        <!-- Begin siteLevel HTML Searchbox Code -->
+        <form
+          class="split"
+          method="get"
+          action="https://www.sitelevel.com/query"
+          accept-charset="utf-8"
+        >
+          <div class="sl_search_box">
+            <input type="hidden" name="crid" value="ls3s1sja" />
+            <input type="text" name="query" />
+            <button id="search" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </form>
+        <!-- End siteLevel HTML Searchbox Code -->
+        <a href="about.html" class="split" id="aboutsf" onclick="route()">
+          About SF/informed
+        </a>
+      </nav>
+    </div>
+    <script src="js/router.js"></script>
+    <div class="page-container align-center">
+      <h1>Local News</h1>
+      <p>
+        Stay informed about San Francisco and local current events with this
+        SFGate RSS feed.
+      </p>
+    </div>
+    <!-- <rssapp-wall id="Ylr79sJFS0UurUbx"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script> -->
 
-</div>
-<!-- <rssapp-wall id="Ylr79sJFS0UurUbx"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script> -->
-
-<!-- start sw-rss-feed code --> 
-<!-- start sw-rss-feed code --> 
-<script type="text/javascript"> 
-<!-- 
-rssfeed_url = new Array(); 
-rssfeed_url[0]="https://www.sfgate.com/bayarea/feed/Bay-Area-News-429.php";  
-rssfeed_frame_width="q900"; 
-rssfeed_frame_height="844"; 
-rssfeed_scroll="off"; 
-rssfeed_scroll_step="6"; 
-rssfeed_scroll_bar="off"; 
-rssfeed_target="_blank"; 
-rssfeed_font_size="12"; 
-rssfeed_font_face=""; 
-rssfeed_border="on"; 
-rssfeed_css_url="https://feed.surfing-waves.com/css/style4.css"; 
-rssfeed_title="on"; 
-rssfeed_title_name=""; 
-rssfeed_title_bgcolor="#3366ff"; 
-rssfeed_title_color="#fff"; 
-rssfeed_title_bgimage=""; 
-rssfeed_footer="on"; 
-rssfeed_footer_name="rss feed"; 
-rssfeed_footer_bgcolor="#fff"; 
-rssfeed_footer_color="#333"; 
-rssfeed_footer_bgimage=""; 
-rssfeed_item_title_length="50"; 
-rssfeed_item_title_color="#666"; 
-rssfeed_item_bgcolor="#fff"; 
-rssfeed_item_bgimage=""; 
-rssfeed_item_border_bottom="on"; 
-rssfeed_item_source_icon="on"; 
-rssfeed_item_date="off"; 
-rssfeed_item_description="on"; 
-rssfeed_item_description_length="120"; 
-rssfeed_item_description_color="#666"; 
-rssfeed_item_description_link_color="#333"; 
-rssfeed_item_description_tag="on"; 
-rssfeed_no_items="0"; 
-rssfeed_cache = "e67a1dcf27c04bb96604b99dfba21f66"; 
-//--> 
-</script> 
-<script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script> 
-<!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. --> 
-<div style="color:#ccc;font-size:10px; text-align:right; width:q900px;">powered by <a href="https://surfing-waves.com" rel="noopener" target="_blank" style="color:#ccc;">Surfing Waves</a></div> 
-<!-- end sw-rss-feed code -->
+    <!-- start sw-rss-feed code -->
+    <!-- start feedwind code -->
+    <script
+      type="text/javascript"
+      src="https://feed.mikle.com/js/fw-loader.js"
+      preloader-text="Loading"
+      data-fw-param="158627/"
+    ></script>
+    <!-- end feedwind code -->
+  </body>
+</html>
